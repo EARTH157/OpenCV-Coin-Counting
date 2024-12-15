@@ -41,6 +41,12 @@ def coinCounting(filename):
     print('Yellow = ',yellow)
     print('Blue = ', blue)
 
+    cv2.putText(im,"Pic.NO : "+str(filename),(20,20),
+                    fontFace = cv2.FONT_HERSHEY_PLAIN,
+                    fontScale = 1,
+                    thickness = 1,
+                    color = (255,255,0)) 
+
     cv2.putText(im,"Blue : "+str(blue),(50,100),
                     fontFace = cv2.FONT_HERSHEY_PLAIN,
                     fontScale = 2,
